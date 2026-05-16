@@ -284,12 +284,42 @@ img {
 
 .hero-card {
   align-self: end;
-  padding: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: var(--radius);
   background: var(--glass);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
+}
+
+.hero-founder {
+  display: grid;
+  grid-template-columns: 118px 1fr;
+  gap: 20px;
+  align-items: center;
+  max-width: 520px;
+}
+
+.founder-photo-wrap {
+  width: 118px;
+  height: 148px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(255,255,255,0.38);
+  box-shadow: 0 18px 42px rgba(0, 44, 64, 0.25);
+  flex-shrink: 0;
+}
+
+.founder-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.founder-message {
+  min-width: 0;
 }
 
 .hero-card span {
@@ -302,14 +332,16 @@ img {
 
 .hero-card strong {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.55rem;
   line-height: 1.1;
-  margin: 16px 0;
+  margin: 12px 0;
 }
 
 .hero-card p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255,255,255,0.82);
   margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
 /* =========================
